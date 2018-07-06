@@ -12,27 +12,26 @@ const codes = [
 ];
 
 function init() {
-  let idx = 0
+  let i = 0
 
   document.body.addEventListener("keydown", (e) => {
     const key = e.key
     
     
     
-    if (codes[idx] === key) {
-      ++idx
+    if (codes[i] === key) {
+      ++i
     } else {
-      idx = 0
+      i = 0
     }
     
     
-    //idx = (codes[idx] === key) ? ++idx : 0
     
-    if (idx === codes.length) {
+    if (i === codes.length) {
       
       alert("Hurray!");
       
-      idx = 0
+      i = 0
     }
     
   });
