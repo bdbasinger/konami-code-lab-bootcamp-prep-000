@@ -22,8 +22,8 @@ function init() {
     if (codes[idx] === key) {
       ++idx
     } else {
-  idx = 0
-}
+      idx = 0
+    }
     
     
     //idx = (codes[idx] === key) ? ++idx : 0
