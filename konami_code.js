@@ -13,11 +13,8 @@ const codes = [
 
 function init() {
   let i = 0
-
   document.body.addEventListener("keydown", (e) => {
     const key = e.key
-    
-    
     
     if (codes[i] === key) {
       ++i
@@ -25,12 +22,8 @@ function init() {
       i = 0
     }
     
-    
-    
     if (i === codes.length) {
-      
       alert("Hurray!");
-      
       i = 0
     }
     
